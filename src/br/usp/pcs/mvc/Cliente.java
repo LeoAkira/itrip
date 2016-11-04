@@ -1,9 +1,9 @@
 package br.usp.pcs.mvc;
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Cliente {
 	private String nome;
-	private Date nascimento;
+	private LocalDate nascimento;
 	private int cpf;
 	private int rg;
 	private String endereco;
@@ -11,7 +11,7 @@ public class Cliente {
 	private String email;
 	private int telefone;
 	
-	public Cliente(String nome, Date nascimento, int cpf, int rg, String endereco, int passaporte, String email, int telefone) {
+	public Cliente(String nome, LocalDate nascimento, int cpf, int rg, String endereco, int passaporte, String email, int telefone) {
 		super();
 		this.nome = nome;
 		this.nascimento = nascimento;
@@ -28,10 +28,10 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Date getNascimento() {
+	public LocalDate getNascimento() {
 		return nascimento;
 	}
-	public void setNascimento(Date nascimento) {
+	public void setNascimento(LocalDate nascimento) {
 		this.nascimento = nascimento;
 	}
 	public int getCpf() {

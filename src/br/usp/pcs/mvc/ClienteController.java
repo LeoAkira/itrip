@@ -1,7 +1,6 @@
 package br.usp.pcs.mvc;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.time.LocalDate;
 
 import javax.servlet.RequestDispatcher;
@@ -14,14 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ClientesController
  */
-@WebServlet("/ClientesController")
-public class ClientesController extends HttpServlet {
+@WebServlet("/ClienteController")
+public class ClienteController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ClientesController() {
+    public ClienteController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,17 +32,12 @@ public class ClientesController extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		  RequestDispatcher rd = request.getRequestDispatcher("clientes.jsp"); 		    
+		  RequestDispatcher rd = request.getRequestDispatcher("cliente.jsp"); 		    
 		   
-		  ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 		  
-		  Cliente cliente1 = new Cliente("Cliente 1", LocalDate.of(1995,01,01), 123, 456, "Rua Blado", 789, "blado@blado.com", 800);
-		  Cliente cliente2 = new Cliente("Cliente 2", LocalDate.of(1900, 02, 20), 987, 654, "Rua Blado", 321, "blado@blado.com", 190);
-		  clientes.add(cliente1);
-		  clientes.add(cliente2);
-
+		  Cliente cliente = new Cliente("Cliente", LocalDate.of(1995, 01, 01), 123, 456, "Rua Blado", 789, "blado@blado.com", 800);
 				  
-		  request.setAttribute("clientes", clientes);
+		  request.setAttribute("cliente", cliente);
 		    
 		    		
 		  rd.forward(request, response);//method may be include or forward  

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>iTrip</title>
+<title>Insert title here</title>
 <style>
 	.hotel-container {
 		border-bottom: 1px solid black;
