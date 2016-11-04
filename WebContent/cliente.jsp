@@ -16,7 +16,7 @@
 				<p>Nascimento: <b><%= cliente.getNascimento() %></b></p>
 				<p>CPF: <b><%= cliente.getCpf() %></b></p>
 				<p>RG: <b><%= cliente.getRg() %></b></p>
-				<p>Endereço: <b><%= cliente.getEndereço() %></b></p>
+				<p>Endereço: <b><%= cliente.getEndereco() %></b></p>
 				<p>Passaporte: <b><%= cliente.getPassaporte() %></b></p>
 				<p>Email: <b><%= cliente.getEmail() %></b></p>
 				<p>Telefone: <b><%= cliente.getTelefone() %></b></p>		

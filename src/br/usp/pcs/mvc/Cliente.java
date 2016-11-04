@@ -6,18 +6,18 @@ public class Cliente {
 	private Date nascimento;
 	private int cpf;
 	private int rg;
-	private String endereço;
+	private String endereco;
 	private int passaporte;
 	private String email;
 	private int telefone;
 	
-	public Cliente(String nome, Date nascimento, int cpf, int rg, String endereço, int passaporte, String email, int telefone) {
+	public Cliente(String nome, Date nascimento, int cpf, int rg, String endereco, int passaporte, String email, int telefone) {
 		super();
 		this.nome = nome;
 		this.nascimento = nascimento;
 		this.cpf = cpf;
 		this.rg = rg;
-		this.endereço = endereço;
+		this.endereco = endereco;
 		this.passaporte = passaporte;
 		this.email = email;
 		this.telefone = telefone;
@@ -46,11 +46,11 @@ public class Cliente {
 	public void setRg(int rg) {
 		this.rg = rg;
 	}
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	public int getPassaporte() {
 		return passaporte;
